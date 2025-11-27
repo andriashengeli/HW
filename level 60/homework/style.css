@@ -44,3 +44,36 @@ h1{
     color: #c3de64;
     font-size: 14px;
 }
+
+
+main > p {
+    color: #cfcfcf;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.div-btn {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.div-btn button {
+    width: 100%;
+    padding: 14px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.div-btn button:hover {
+    background-color: #c3de64;
+    color: #141414;
+}
