@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* აქ ჩვენ გრიდის საშუალებით გავაკეთეთ მარტივი დიზაინი შევქმენით div - ები და შემდგეგ დავალაგეთ ჰორიზონტალურად და ვერტიკალურად */
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+}
+
+
+.item{
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
