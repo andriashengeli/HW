@@ -18,3 +18,21 @@ const telephone2 = {
 }
 
 telephone2.aboutelephone();
+
+
+
+const factoryfunction = (hobby1, hobby2, hobby3) => {
+    return{
+        hobby1: hobby1,
+        hobby2: hobby2,
+        hobby3: hobby3,
+        myhobby(){
+            console.log("my hobbies are " + this.hobby1 + ", " + this.hobby2 + ", and " + this.hobby3);
+        }
+    }
+}
+
+const myhobby = factoryfunction("playing football", "playing video games", "cooking");
+myhobby.myhobby();
+
+
