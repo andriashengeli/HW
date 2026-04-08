@@ -1,0 +1,52 @@
+<!--შექმენი პროდუქტების კალათის საიტი.
+
+* გააკეთე ფორმა, სადაც შეიყვან:
+
+  * პროდუქტის სახელი
+  * რაოდენობა
+  * ერთი ცალის ფასი
+
+* ფორმის ქვემოთ გააკეთე კალათის სექცია (div), სადაც დამატებული პროდუქტები გამოჩნდება.
+
+* თითოეულ პროდუქტს ჰქონდეს თავისი div, სადაც ჩანს:
+
+  * სახელი
+  * რაოდენობა
+  * ჯამური ფასი (რაოდენობა × ფასი)
+
+* რაოდენობასთან იყოს ღილაკები + და -, რომლითაც რაოდენობა შეიცვლება.
+
+* როცა რაოდენობა შეიცვლება, ავტომატურად უნდა შეიცვალოს ჯამური ფასიც.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>product shop</h1>
+    <form>
+        <label for="products">product</label>
+        <input type="text" id="productname" placeholder="enter-product"name="products">
+        <br>
+        <br>
+        <label for="quantity">how-many</label>
+        <input type="number" id="quantity" placeholder="how-much-products"name="quantity">
+        <br>
+        <br>
+        <label for="price">price</label>
+        <input type="number" id="price" placeholder="one-product-price"name="price">
+        <button>submit</button>
+        </form>
+        <br>
+
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+
+        <div id="result"></div>
+</body>
+    <script src="script.js"></script>
+</html>
